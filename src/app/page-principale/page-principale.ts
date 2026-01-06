@@ -29,9 +29,7 @@ export class PagePrincipale {
   
   afficherRegle = false;
   afficher() : void{
-    if(!this.afficherRegle){
-      this.afficherRegle = true;
-    }
+    this.afficherRegle = !this.afficherRegle;
   }
 
 

@@ -1,7 +1,9 @@
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
+
+
 header{
     background-color: #7C4DFF;
     color: white;
@@ -16,6 +18,16 @@ header div button{
     box-shadow: none;
     border-radius: 0.5em;
     font-size: 15px;
+}
+header div button:hover{
+    background-color: #6A3FE0;
+    color: white;
+    border:solid white;
+}
+
+
+button:active {
+    transform: translateY(4px);
 }
 
 header div {

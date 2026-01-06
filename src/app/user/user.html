@@ -2,14 +2,18 @@
 <!-- Le ngSubmir associe directement le bouton submit à la fonction log du composant-->
 <form (ngSubmit)="log()">
     <div class="champ">
-        <label>Username</label>
+        <label>Username
+            <span style="color: red;">*</span>
+        </label>
         <!-- Le ngModel sert à récupérer la valeur du champ -->
         <input type="text" [(ngModel)]="username" name="username" required>
     </div>
     
     <div class="champ">
         <!-- Le ngModel sert à récupérer la valeur du champ -->
-        <label>Password</label>
+        <label>Password 
+            <span style="color: red;">*</span>
+        </label>
         <input type="text" [(ngModel)]="password" name="password"  required>
     </div>
     <p style="color: red;" [hidden]="cache">Connection échouée, nom d'utilisateur ou mot de passe incorrect</p>

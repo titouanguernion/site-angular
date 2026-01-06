@@ -1,12 +1,15 @@
+
 form{
     display: flex;
     flex-direction: column;
     gap: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 
 button{
-    background-color:#04AA6D;
+    background-color:#7C4DFF;
 
     font-size: 16px;
     padding: 6px 16px;
@@ -20,8 +23,11 @@ button{
 }
 button:hover{
     background-color: white;
-    color: #04AA6D;
-    border: solid #04AA6D;
+    color: #7C4DFF;
+    border: solid #7C4DFF;
+}
+button:active {
+transform: translateY(4px);
 }
 
 
