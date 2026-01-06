@@ -1,0 +1,17 @@
+
+<main>
+    <h1>Welcome {{username}}</h1>
+
+    <h2>Règlement</h2>
+    <button (click)="afficher()">Voir plus</button>
+    <section *ngIf="afficherRegle">
+        <div *ngFor="let elem of liste">
+            <h3>Article {{elem}}</h3>
+            <p>{{lorem}}</p>
+        </div>
+
+    </section>
+    
+
+
+</main>

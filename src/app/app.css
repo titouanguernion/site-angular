@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #7C4DFF;
+    color: white;
+
+}
+
+header div button{
+    background-color: aliceblue;
+    color: #7C4DFF;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0.5em;
+    font-size: 15px;
+}
+
+header div {
+    display: flex;
+    gap: 3em;
+    padding: 1.5em 1em;
+}

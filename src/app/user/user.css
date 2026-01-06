@@ -1,0 +1,37 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+button{
+    background-color:#04AA6D;
+
+    font-size: 16px;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 8px;
+    color:white;
+    width: auto;
+    align-self: self-start;
+    outline: none;
+    box-shadow: none;
+}
+button:hover{
+    background-color: white;
+    color: #04AA6D;
+    border: solid #04AA6D;
+}
+
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+input[type=text] {
+  width: 20em;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
