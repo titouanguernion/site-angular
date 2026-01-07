@@ -28,9 +28,9 @@ export class User {
 
 
   /**
-   * Fonction qui déconnecte l'utilisateur quand il retourne sur la page de connexion
+   * Function which disconect the user when the logpage is displayed
    * 
-   * Fait appel aux fonction dans auth.service.ts pour la getion de la connexion
+   * Call the functions in auth.service.ts for login management
    */
   ngOnInit() : void{
     if(this.authService.isLoggedIn() === true){
@@ -39,15 +39,17 @@ export class User {
   }
 
   /**
-   * Fonction de connection 
+   * Login function
    * 
-   * redirige vers la page si la connexion est faite, sinon affiche un texte d'échec
+   * 
+   * Go to the main page if the login is successful
+   * Print a error text else
    */
   log(): void {
     if (this.userLog == this.username && this.userPass == this.password) {
       /*
-        Redirige vers la page principage du site si les logs sont valides
-        queryparams -> paramètres à injecter dans la nouvelle page
+        Go to the main page if the logs are corrects
+        queryparams -> params to inject in the target page
       */
       this.authService.login();
       this.authService.setUsername(this.userLog);

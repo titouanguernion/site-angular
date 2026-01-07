@@ -15,11 +15,12 @@ export class App {
 
   constructor(private router: Router, public authService: AuthService) {} 
 
+  // Go to the log page
   goLog(): void {
     this.router.navigate(['']);
   }
 
-
+  // Go to a specified link (hypertext)
   goTo(link: string): void {
     window.open(link, '_blank');
   }

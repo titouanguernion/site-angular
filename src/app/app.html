@@ -2,10 +2,10 @@
 
 <header>
     <div>
-        <button (click)="goLog()">Page de connexion</button>
-        <button [routerLink]="['/pagePrincipale']">Page utilisateur</button>
-        <button [routerLink]="['/pageSecondaire']">Page secondaire</button>
-        <button (click)="goTo('https://angular.dev/')">Documentation</button>
+        <button (click)="goLog()">Login page</button>
+        <button [routerLink]="['/pagePrincipale']">Main page</button>
+        <button [routerLink]="['/pageSecondaire']">Secondary page</button>
+        <button (click)="goTo('https://angular.dev/')">Angular Doc</button>
         <button *ngIf="authService.isLoggedIn()" (click)="authService.logOut()" [routerLink]="['']">logout</button>
         
     </div>

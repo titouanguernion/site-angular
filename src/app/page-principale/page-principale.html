@@ -3,8 +3,9 @@
     <h1>Welcome {{username}}</h1>
 
     
-    <button (click)="afficher()" *ngIf="!afficherRegle">Voir plus</button>
+    <button (click)="afficher()" *ngIf="!afficherRegle">See more</button>
     <section *ngIf="afficherRegle">
+        <!-- If the button  "See more" is clicked, it print default rules -->
         <h1 style="display: flex; justify-content: center;">Regulation</h1>
         <div *ngFor="let elem of liste" class="art">
             <div class="titleArt">
@@ -16,7 +17,8 @@
             
             
         </div>
-        <button (click)="afficher()">Voir moins</button>
+        <!-- If the button  "Hide regualations" is clicked, it hide the rules -->
+        <button (click)="afficher()">Hide regualations</button>
 
     </section>
 </main>

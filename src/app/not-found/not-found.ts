@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './not-found.html',
   styleUrl: './not-found.css',
 })
+// 404 nor found error
 export class NotFound {
 
 }

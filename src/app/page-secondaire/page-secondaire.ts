@@ -14,9 +14,10 @@ export class PageSecondaire {
   constructor(private router: Router, public authService: AuthService) {}
 
   username : string | null = null;
-
+  
+  // Init the username variable to reuse it on the page
   ngOnInit(): void {
-    this.username = this.authService.getUsername(); // récupérer l'username
+    this.username = this.authService.getUsername(); // getting of the username
   }
 
 }

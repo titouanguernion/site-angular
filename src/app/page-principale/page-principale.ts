@@ -21,7 +21,7 @@ export class PagePrincipale {
         anim id est laborum.`;
 
 
-  // constucteur de la route
+  // Class constructor
   constructor(private route: ActivatedRoute, private authService:AuthService) {}
 
   ngOnInit(): void {
@@ -29,6 +29,7 @@ export class PagePrincipale {
     this.username = this.authService.getUsername();
   }
   
+  // Function which invert the value of the boolean "afficherRegle"
   afficherRegle = false;
   afficher() : void{
     this.afficherRegle = !this.afficherRegle;

@@ -1,3 +1,4 @@
+ /* Buttons appearance and animations */
 button{
     background-color: #7C4DFF;
     color: aliceblue;
@@ -12,12 +13,12 @@ button:hover{
     color: #7C4DFF;
     border: solid 1px #7C4DFF;
 }
-
-
 button:active {
     transform: translateY(4px);
 }
 
+
+/* Appreance of the regulations parts */
 .art{
     display: flex;
     justify-self: center;
