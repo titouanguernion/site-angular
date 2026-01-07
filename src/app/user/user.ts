@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../service/auth.service';
 
 
 @Component({
@@ -11,6 +12,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./user.css'], 
 })
 export class User {
+
+  
+
   username = '';
   password = '';
 
@@ -20,7 +24,7 @@ export class User {
   cache: boolean = true;
 
   // Constructeur du routeur
-  constructor(private router: Router) {} 
+  constructor(private router: Router, private authService: AuthService) {}
 
   /**
    * Fonction de connection 
@@ -33,12 +37,11 @@ export class User {
         Redirige vers la page principage du site si les logs sont valides
         queryparams -> paramètres à injecter dans la nouvelle page
       */
+      this.authService.login();
       this.router.navigate(['pagePrincipale'], { queryParams: { username: this.username } }); 
     } 
     else {
       this.cache = false;
     }
   }
-
-
 }

@@ -3,15 +3,14 @@
 <header>
     <div>
         <button (click)="goLog()">Page de connexion</button>
+        <button [routerLink]="['/pagePrincipale']">Page utilisateur</button>
         <button (click)="goTo('https://angular.dev/')">Documentation</button>
+        
     </div>
 </header>
 <main>
     <router-outlet></router-outlet>
 </main>
 
-<footer>
-    <p>&copy; 2026 Mon Site Web</p>
-</footer>
 
 

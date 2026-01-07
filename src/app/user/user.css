@@ -1,9 +1,21 @@
 
+article {
+    min-height: 100vh;      /* prend toute la hauteur de l’écran */
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center;     /* centre verticalement */
+}
+
 form{
     display: flex;
     flex-direction: column;
+    
     gap: 2em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid 1px #A0B4CE;
+    border-radius: 0.75em;
+    padding: 2em 4em;
+    
 
 }
 
@@ -24,7 +36,7 @@ button{
 button:hover{
     background-color: white;
     color: #7C4DFF;
-    border: solid #7C4DFF;
+
 }
 button:active {
 transform: translateY(4px);

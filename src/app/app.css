@@ -3,10 +3,25 @@ html, body {
     padding: 0; 
 }
 
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* hauteur du header */
+header {
+    height: 64px;
+    flex-shrink: 0;
+}
+
+
+
 
 header{
     background-color: #7C4DFF;
     color: white;
+    
 
 }
 
@@ -22,7 +37,6 @@ header div button{
 header div button:hover{
     background-color: #6A3FE0;
     color: white;
-    border:solid white;
 }
 
 
@@ -32,9 +46,8 @@ button:active {
 
 header div {
     display: flex;
-    gap: 3em;
     padding: 1.5em 1em;
-}
+    gap:2em;}
 
 
 

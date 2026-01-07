@@ -1,0 +1,46 @@
+button{
+    background-color: #7C4DFF;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0.25em;
+    font-size: 15px;
+}
+button:hover{
+    background-color: aliceblue;
+    color: #7C4DFF;
+    border: solid 1px #7C4DFF;
+}
+
+
+button:active {
+    transform: translateY(4px);
+}
+
+.art{
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    margin: 0.5em 0;
+    border: solid #7C4DFF 1px;
+    width: 80%;
+}
+.titleArt{
+    background-color: #7C4DFF;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    width: 30%;
+}
+.txtArt{
+    background-color: aliceblue;
+    color: #7C4DFF;
+    padding: 0.5em;
+    display: flex;
+    padding: 2em;
+    text-align:justify;
+
+}

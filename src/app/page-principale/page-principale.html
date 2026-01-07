@@ -5,15 +5,18 @@
     
     <button (click)="afficher()" *ngIf="!afficherRegle">Voir plus</button>
     <section *ngIf="afficherRegle">
-        <h2>Règlement</h2>
-        <div *ngFor="let elem of liste">
-            <h3>Article {{elem}}</h3>
-            <p>{{lorem}}</p>
+        <h1 style="display: flex; justify-content: center;">Regulation</h1>
+        <div *ngFor="let elem of liste" class="art">
+            <div class="titleArt">
+                <h3>Article {{elem}}</h3>
+            </div>
+            <div class="txtArt">
+                <p>{{lorem}}</p>
+            </div>
+            
+            
         </div>
         <button (click)="afficher()">Voir moins</button>
 
     </section>
-    
-
-
 </main>
