@@ -26,10 +26,22 @@ export class User {
   // Constructeur du routeur
   constructor(private router: Router, private authService: AuthService) {}
 
+
+  /**
+   * Fonction qui déconnecte l'utilisateur quand il retourne sur la page de connexion
+   * 
+   * Fait appel aux fonction dans auth.service.ts pour la getion de la connexion
+   */
+  ngOnInit() : void{
+    if(this.authService.isLoggedIn() === true){
+      this.authService.logOut();
+    }
+  }
+
   /**
    * Fonction de connection 
    * 
-   * redirige vers la page si la connexion est faite, sinon affiche une alert qui ondique que la connexion a échoué
+   * redirige vers la page si la connexion est faite, sinon affiche un texte d'échec
    */
   log(): void {
     if (this.userLog == this.username && this.userPass == this.password) {

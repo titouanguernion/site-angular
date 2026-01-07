@@ -5,7 +5,7 @@ import { NotFound } from './not-found/not-found';
 import { AuthGuard } from './auth-guard';
 
 export const routes: Routes = [
-    {path: 'pagePrincipale', component:PagePrincipale, canActivate: [AuthGuard]}, 
+    {path: 'pagePrincipale', component:PagePrincipale, canActivate: [AuthGuard]}, // canActivate -> redirige vers la page de connexion SI pas connecté
     {path:'', component:User}, 
     {path:'**', component:NotFound}
 ];
