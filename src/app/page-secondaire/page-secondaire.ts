@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { AuthService } from '../service/auth.service';
+
 
 @Component({
   selector: 'app-page-secondaire',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './page-secondaire.html',
   styleUrl: './page-secondaire.css',
 })
