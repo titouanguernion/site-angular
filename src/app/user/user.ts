@@ -50,7 +50,8 @@ export class User {
         queryparams -> paramètres à injecter dans la nouvelle page
       */
       this.authService.login();
-      this.router.navigate(['pagePrincipale'], { queryParams: { username: this.username } }); 
+      this.authService.setUsername(this.userLog);
+      this.router.navigate(['pagePrincipale']); 
     } 
     else {
       this.cache = false;

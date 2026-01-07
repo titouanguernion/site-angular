@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../service/auth.service';
+
 
 
 @Component({
@@ -20,11 +22,11 @@ export class PagePrincipale {
 
 
   // constucteur de la route
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private authService:AuthService) {}
 
   ngOnInit(): void {
     // Récupération du username pour injecter dans le template
-    this.username = this.route.snapshot.queryParamMap.get('username');
+    this.username = this.authService.getUsername();
   }
   
   afficherRegle = false;
